@@ -78,13 +78,13 @@ export default function Home() {
           type="text"
           placeholder="Name"
           {...register("name", { required: true })}
-          className="w-full px-4 py-2 border border-gray-300 rounded-lg"
+          className="w-full px-4 py-2 border border-gray-300 rounded-lg text-black"
         />
         <input
           type="email"
           placeholder="Email"
           {...register("email", { required: true })}
-          className="w-full px-4 py-2 border border-gray-300 rounded-lg"
+          className="w-full px-4 py-2 border border-gray-300 rounded-lg text-black"
         />
         <button
           type="submit"
@@ -137,7 +137,7 @@ export default function Home() {
               </div>
               <button
                 
-                 onClick={() => router.push(`/users/${item.id}`)}
+                 onClick={() => router.push(`/${item.id}`)}
                 className="mt-3 w-full bg-indigo-500 hover:bg-indigo-600 text-white py-2 rounded-lg transition"
               >
                 View Details
